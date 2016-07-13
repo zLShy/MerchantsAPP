@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/meeting_list_rl"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+    >
+
+    <RelativeLayout
+        android:id="@+id/meeting_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="false"
+        >
+
+        <TextView
+            android:textColor="#000000"
+            android:id="@+id/meeting_item_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="会议消息列表"/>
+
+        <Button
+            android:clickable="false"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/notebook"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/meeting_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/meeting_rl"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="会议通知"
+        android:textSize="25sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/meeting_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/meeting_title"
+        android:text="   12345"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+    <ImageView
+        android:background="@drawable/view_back"
+        android:layout_below="@id/meeting_body"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_height="2dp"/>
+
+</RelativeLayout>

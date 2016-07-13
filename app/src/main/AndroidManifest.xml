@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="cn.thinkorange.merchantsapp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".AdvertsingActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name=".MyRevice">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".WebviewActivity"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".com.example.qr_codescan.MipcaActivityCapture"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+
+        <activity
+        android:name=".HomeActivity"
+        android:launchMode="singleTask"
+        android:theme="@android:style/Theme.NoTitleBar"
+        />
+        <activity
+            android:name=".UpLoadActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <activity
+            android:name=".ChangePassActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+
+        <activity
+            android:name=".MyQrCodeActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <activity
+            android:name=".MeetingMessageActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <activity
+            android:name=".SearchInfoActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+
+        <activity
+            android:name=".DetailsActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <activity
+            android:name=".HelpActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+        <activity
+            android:name=".ChangePassWordActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE"/>
+    <uses-permission android:name="android.hardware.camera.autofocus"/>
+
+</manifest>

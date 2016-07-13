@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="image_from_arr">
+        <item>相机拍照</item>
+        <item>手机相册</item>
+    </array>
+</resources>

@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="#212121"
+        android:gravity="center"
+        android:text="最多上传5张图片"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/tv_picture_cut_back"
+        android:layout_width="40dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="10dp"
+        android:background="#212121"
+        android:drawableLeft="@drawable/title_back"
+        android:paddingLeft="10dp" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView_upload_picture"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomBar"
+        android:layout_below="@id/tv_picture_cut_back">
+
+        <com.thinkorange.gjhclient.ListViewForScrollView
+            android:id="@+id/listview_up_picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top" />
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:background="#212121"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+<LinearLayout
+    android:id="@+id/imageload_ll"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:clickable="false"
+        android:id="@+id/btn_Upload_pictures"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:scaleType="center"
+        android:src="@drawable/upload"
+        />
+    <TextView
+        android:clickable="false"
+        android:textColor="#ffffff"
+        android:text="上传"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nextinfo_ll"
+            android:gravity="center"
+            android:layout_marginLeft="80dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:clickable="false"
+                android:id="@+id/btn_Upload_pictures_next"
+                android:layout_width="44dp"
+                android:layout_height="30dp"
+                android:src="@drawable/next_image"
+                />
+
+            <TextView
+                android:clickable="false"
+                android:textColor="#ffffff"
+                android:text="详情"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

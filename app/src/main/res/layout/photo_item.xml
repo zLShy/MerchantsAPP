@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/img_up_picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <Button
+        android:id="@+id/btn_up_picture_delete"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="top|right"
+        android:background="@drawable/pic_dele" />
+
+</FrameLayout>

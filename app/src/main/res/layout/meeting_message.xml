@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+    >
+    <include
+        android:id="@+id/layout_include"
+        layout="@layout/titlebar"/>
+
+    <Button
+        android:id="@+id/meeting_btn"
+        android:clickable="false"
+        android:layout_below="@id/layout_include"
+        android:background="@drawable/meetingiv"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"/>
+    <ListView
+        android:divider="@null"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/meeting_btn"
+        android:id="@+id/meeting_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
